@@ -1,9 +1,4 @@
 loki:
-  monitoring:
-    selfMonitoring:
-      enabled: false
-  grafanaAgent:
-    installOperator: false
 #  schemaConfig:
  #   configs:
  #     - from: "2024-09-01"
@@ -77,3 +72,9 @@ bloomCompactor:
   replicas: 0
 bloomGateway:
   replicas: 0
+
+monitoring:
+  selfMonitoring:
+    enabled: false
+grafanaAgent:
+  installOperator: false
