@@ -4,15 +4,15 @@ loki:
       enabled: false
   grafanaAgent:
     installOperator: false
-  schemaConfig:
-    configs:
-      - from: "2024-09-01"
-        store: tsdb
-        object_store: s3
-        schema: v14
-        index:
-          prefix: loki_index_
-          period: 24h
+#  schemaConfig:
+ #   configs:
+ #     - from: "2024-09-01"
+ #       store: tsdb
+ #       object_store: s3
+ #       schema: v14
+ #       index:
+ #         prefix: loki_index_
+ #         period: 24h
   ingester:
     chunk_encoding: snappy
   tracing:
