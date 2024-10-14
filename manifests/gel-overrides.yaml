@@ -1,4 +1,9 @@
 loki:
+  monitoring:
+    selfMonitoring:
+      enabled: false
+  grafanaAgent:
+    installOperator: false
   schemaConfig:
     configs:
       - from: "2024-09-01"
